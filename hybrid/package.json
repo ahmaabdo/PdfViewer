@@ -12,11 +12,17 @@
     "dependencies": {
         "cordova-android": "7.0.0",
         "cordova-browser": "5.0.3",
-        "cordova-plugin-whitelist": "^1.3.3"
+        "cordova-plugin-android-fingerprint-auth": "git+https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth.git",
+        "cordova-plugin-touch-id": "^3.3.1",
+        "cordova-plugin-whitelist": "^1.3.3",
+        "cordova-plugin-x-toast": "^2.6.2"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-android-fingerprint-auth": {},
+            "cordova-plugin-x-toast": {},
+            "cordova-plugin-touch-id": {}
         },
         "platforms": [
             "android",
