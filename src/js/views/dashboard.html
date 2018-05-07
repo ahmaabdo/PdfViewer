@@ -1,0 +1,39 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-applayout-page">
+  <div class="oj-applayout-fixed-top">
+    <!--
+       ** Oracle JET V5.0.0 hybrid mobile application header pattern.
+       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+       ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header">
+      <oj-module config="[[headerConfig]]"></oj-module>
+    </header>
+  </div>
+  <!-- This is where your main page content will be loaded -->
+  <div class="oj-applayout-content">
+    <div role="main" class="oj-hybrid-applayout-content">
+      <div class="oj-hybrid-padding">
+        <h1>Dashboard Content Area</h1>
+
+        <div id="popupWrapper">
+          <oj-popup style="display:none" id="open-pdf">
+            <embed src="https://onedrive.live.com/embed?cid=54ED32C07853E1A8&resid=54ED32C07853E1A8%2137025&authkey=AKS95k1Xm-uE1lA&em=2"
+              width="300px" height="400px" />
+          </oj-popup>
+          <oj-button id="btnPdf" class='oj-button-primary' chroming='full' data-bind="click: function(data)
+          {
+            document.querySelector('#open-pdf').open('#btnPdf');
+          }">
+            Open
+          </oj-button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
